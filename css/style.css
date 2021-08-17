@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Pacifico";
+  src: local("../fonts/Pacifico-Regular.woff"),
+    url("../fonts/Pacifico-Regular.woff") format("woff");
+}
+
+body {
+  background-image: url(../img/background.png);
+  background-repeat: repeat-x;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Pacifico";
+  text-align: center;
+  font-size: 18px;
+  animation: animatedBackground 1000s linear infinite;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -20000px 0;
+  }
+}

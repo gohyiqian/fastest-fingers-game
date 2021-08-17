@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastest Fingers Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- progress bar -->
+    <progress max="45" id="timebar">
+    </progress>
+
+    <!-- overlay -->
+    <div id="overlay-screen">
+        <div class="overlay-box">
+            3
+        </div>
+    </div>
+
+
+     <!-- main content -->
+     <main class="container">
+        <header>Fastest Fingers Game</header>
+        <!-- instructions -->
+        <div class="instructions">
+            <!-- <span id="seconds">42</span> seconds is all you get....<br><br> -->
+            Type as many words as you can within the 30 seconds <span class="icon-time"> </span>,<br>
+            the quicker you get the words right, the harder it'll get!<br><br>
+            You'll also get 1 second added to your timer for every correct word,<br>
+            but mistype a word and you'll lose a life <img class="icons" src="img/heart.svg">
+            
+        </div>
+
+        <!-- buttons -->
+        <div id="buttons">
+            <span id="option-message">First, select your preferred mode:<br><br></span>
+            <button id="normal-mode-button" onclick="normalMode()">Words</button>
+            <button id="phrases-mode-button" onclick="phrasesMode()">Phrases</button>
+            <button id="css-mode-button" onclick="cssMode()">CSS</button>
+            <button id="back-button" onclick="rechooseModes()">BACK</button>
+            <button id="start-button" onclick="loadingScreen()">START GAME</button>
+        </div>
+
+        <section id="gameplay-screen">
+            <!-- user dashboard -->
+            <div class="user-dashboard">
+                <!-- <div class="user-score">
+                    <span class="icon-score"> </span>
+                    Score: <span id="score">0</span>
+                </div> -->
+                <div class="user-time">
+                    <span class="icon-time"> </span>
+                    <span id="time">45</span> seconds
+                </div>
+            </div>
+
+            <!-- where current word loads -->
+            <div id="current-word"></div>
+
+            <!-- where user inputs -->
+            <input id="word-input" disabled>
+
+            <!-- output message loads -->
+            <div id="message"></div>
+
+            <!-- lives -->
+            <div id="lives"></div>
+
+            <button id="end-button" onclick="endGame()">END GAME</button>
+
+        </section>
+
+        <div class="floating-score">
+            <div class="user-score">
+                <span class="icon-score"> </span> Score: <span id="score">0</span>
+            </div>
+        </div>
+    </main>
+
+    <audio id="background" src="sounds/background.mp3"  ></audio>
+    <audio id="gameover" src="sounds/gameover.mp3"  ></audio>
+    <audio id="countdownbeep" src="sounds/beep.mp3" ></audio>
+    <audio id="correct" src="sounds/correct.wav" ></audio>
+    <audio id="incorrect" src="sounds/incorrect.wav" ></audio>
+    <audio id="hoverbutton" src="sounds/button.wav" ></audio>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Fastest Fingers Game
 
-(https://gohyiqian.github.io/fastest-fingers-game/)
+[Play the Game Here](https://gohyiqian.github.io/fastest-fingers-game/)
 
 ## Description
 
@@ -15,3 +15,7 @@ Default per game duration is 30 seconds but will add 1 second for every correct 
 - HTML
 - CSS
 - JavaScript
+
+## Game Page
+
+![Cover Image](img/cover.jpg)

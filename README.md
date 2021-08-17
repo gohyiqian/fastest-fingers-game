@@ -1,5 +1,7 @@
 # Fastest Fingers Game
 
+(https://gohyiqian.github.io/fastest-fingers-game/)
+
 ## Description
 
 A simple 30 seconds typing game. A perfect game to fire up your brain cells early in the morning!
